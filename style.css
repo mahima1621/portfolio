@@ -1,0 +1,863 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Ubuntu:wght@400;500;700&display=swap');
+   *{
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: montserrat;
+}
+nav{
+background-image:url('images/menu-bg.jpg');
+font-family: ubuntu;
+  height: 80px;
+  width: 100%;
+  position: fixed;
+  z-index: 999;
+
+   transition: all 0.3s ease;
+
+}
+label.logo a{
+  color: white;
+  font-size: 35px;
+  line-height: 80px;
+  font-weight: bold;
+  padding-left: 5%;
+  font-family:ubuntu;
+}
+label.logo a span{
+  color:crimson;
+  font-size: 35px;
+  line-height: 80px;
+  font-weight: bold;
+}
+
+nav ul{
+  float: right;
+  margin-right: 20px;
+}
+nav ul li{
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 5px;
+    font-family:poppins;
+
+}
+nav ul li a{
+  color: white;
+  font-size: 20px;
+  padding: 7px 5px;
+  border-radius: 3px;
+    display: inline-block;
+    text-align:center;
+    transition: color 0.3s ease;
+
+}
+
+nav .menu li a:hover{
+  color:#fff;
+}
+.checkbtn{
+ 
+  color: white;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+
+
+}
+.checkbtn i{
+    font-size: 30px;
+  display:none;
+}
+#check{
+  display: none;
+}
+
+
+
+@media (max-width: 1200px){
+nav ul li a{
+  color: white;
+  font-size: 15px;
+  padding: 3px 3px;
+  border-radius: 3px;
+    display: inline-block;
+    text-align:center;
+    transition: color 0.3s ease;
+
+}
+}
+@media (max-width: 858px){
+ 
+  .checkbtn{
+    display:block;
+    z-index: 999;
+  }
+    .checkbtn i.active:before{
+        content: "\f00d";
+ 
+
+    }
+    .checkbtn i{
+  display:block;
+  padding-top: 100%;
+}
+
+.navbar .menu{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #111;
+    left: -100%;
+    right:0;
+    text-align: center;
+    transition: all .5s;
+    top:0;
+    padding-top: 80px;
+  }
+   .navbar .menu.active{
+    left:0;
+
+
+}
+
+nav ul li a{
+  display:none;
+    padding-right: 36%;
+    font-size: 50px;
+  }
+
+     .navbar .menu li{
+        display:block;
+    }
+.navbar .menu li a{
+        display: inline-block;
+        font-size: 25px;
+    }
+   
+    
+}
+  h2{
+    display: flex;
+    width: 10px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size:1em;
+
+}
+
+h2:before,
+h2:after {
+    content: '';
+    border-top: 1px solid #111;
+    margin: 0 20px 0 0;
+    flex: 1 0 20px;
+}
+
+h2:after {
+    margin: 0 0 0 20px;
+
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin:0;
+  padding:0;
+}
+
+.container{
+  margin: 5% ;
+}
+
+/* Float four columns side by side */
+.column {
+  float: left;
+  width: 50%;
+
+   
+}
+.about{
+ color:#666;
+  font-size: 1.2em;
+}
+.about button{
+ color:white;
+ background-color: teal;
+ border-style: none;
+padding:2%;
+border-radius:5px; 
+}
+
+/* Remove extra left and right margins, due to padding */
+
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive columns */
+@media screen and (max-width: 900px) {
+  .column {
+    width: 100%;
+    display: block;
+ 
+
+
+  }
+}
+
+
+  
+/*home page*/
+.home .img{
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+
+.home-text{
+  position:absolute;
+  top:25%;
+  color:white;
+  padding:5%;
+
+}
+.text1{
+  padding:2%;
+  font-size:1.8em;
+}
+.text2{
+  padding:2%;
+  font-size:4em;
+  font-family: ubuntu;
+  font-weight: 20;
+}
+.text3{
+  padding:2%;
+  font-size:2em;
+  margin-bottom: 10%;
+  display:inline-block;
+
+
+}
+.home {
+  /* The image used */
+  background-image: url("image/girl.jfif");
+width:100%;
+height:70%;
+
+  /* Set a specific height */
+  min-height: 700px; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.home-text a{
+  background-color:crimson;
+  margin-left: 2%;
+  color:white;
+  border-radius:5%;
+  border-style: none;
+  padding:5%;
+  cursor:pointer;
+}
+.home .home-text a:hover
+{
+background: none;
+ color:crimson; 
+ border:1px solid crimson;
+ transition: all 0.3 ease;
+}
+/*about us page*/
+.about{
+  padding:1% 0;
+}
+.aboutimg{
+  color:black;
+  padding-bottom:3%;
+  font-size:25px;
+
+}
+.about a{
+  background-color:crimson;
+  color:white;
+  padding:1.5%;
+  border-radius:6%;
+  border-style:none;
+  margin-left: 2%;
+  cursor:pointer;
+}
+
+.about  a:hover
+{
+background: none;
+ color:crimson; 
+ border:1px solid crimson;
+ transition: all 0.3 ease;
+}
+.about .text1{
+  text-align:center;
+  color:black;
+} 
+
+.about .text2{
+  color:crimson;
+  text-align: center;
+   font-size:1.2em;
+}
+
+
+ 
+ .about .text2{
+    display:flex;
+    width: 190px;
+    justify-content: center;
+    margin-left:40%;
+    align-items: center;
+    text-align: center;
+    font-size:1em;
+
+     padding:2% 0 ;
+      padding-top:0;
+
+
+}
+
+ .about .text2:before,
+ .about .text2:after {
+    content: '';
+    border-top: 2px solid #111;
+    margin: 0 20px 0 0;
+    flex: 1 0 20px;
+}
+
+ .about .text2:after {
+    margin: 0 0 0 20px;
+
+}
+.about .left{
+padding-right:20px;
+}
+.about p{
+  color:black;
+  font-size:0.8em;
+  text-align: justify;
+}
+/*services page*/
+.services{
+  background-color:black;
+  color:#fff;
+}
+.services .text1{
+text-align: center;
+}
+.services h2{
+  text-align:center;
+  font-size:1em;
+  padding-left: 50%;
+   padding-top:0;
+}
+
+.card2{
+ 
+  text-align: center;
+
+  text-align: justify;
+}
+/* Float four columns side by side */
+.column2{
+  float: left;
+  width: 33%;
+  padding: 0 0px;
+  cursor:pointer;
+margin:0%;
+}
+
+/* Remove extra left and right margins, due to padding */
+
+
+/* Clear floats after the columns */
+.row2:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive columns */
+@media screen and (max-width: 600px) {
+  .column2 {
+    width: 100%;
+    display: block;
+ 
+
+  }
+}
+
+
+/*contacts page*/
+
+@media (max-width: 700px) {
+  .column-left .text{
+    font-size: 30px;
+  }
+  .column-left form{
+    padding: 10px 0 0 0;
+  }
+  .column-left form .form-row{
+    display: block;
+  }
+  form .form-row .input-data{
+    margin: 35px 0!important;
+  }
+  .submit-btn .input-data{
+    width: 40%!important;
+  }
+}
+
+
+/*services section*/
+.services{
+  padding:5% 0;
+}
+
+.services .card2{
+    color:#fff;
+    background: #111;
+  height:60vh;
+  margin:5% 5%;
+  border-radius: 6%;
+
+}
+.services .card2 i{
+  color:crimson;
+ font-size:5vh;
+  align-items: center;
+ left:40%;
+ position:relative;
+ padding: 5% ;
+}
+.services .text2{
+  color:crimson;
+}
+
+
+ 
+ .services .text2{
+    display:flex;
+    width: 190px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size:1em;
+     margin-left:35%;
+     padding:2% 0 ;
+
+
+}
+
+ .services .text2:before,
+ .services .text2:after {
+    content: '';
+    border-top: 2px solid #ccc;
+    margin: 0 20px 0 0;
+    flex: 1 0 20px;
+}
+
+ .services .text2:after {
+    margin: 0 0 0 20px;
+
+}
+
+
+.services .card2 h1 {
+  color:white;
+  padding-left: 2vw;
+  font-size:2em;
+  text-align:center;
+}
+.services .card2 p {
+  color:white;
+  padding: 2vw;
+  font-size:1em;
+}
+.services .card2:hover{  
+background-color:crimson;
+transition: all 0.3 ease;
+}
+.services .card2:hover i{  
+color:#fff;
+}
+/*skills section*/
+.skills{
+  padding:0% 0;
+  margin:0;
+}
+.skills p{
+
+text-align:justify;
+
+}
+.skills .text1{
+text-align:center;
+font-size:1.8em;
+
+}
+.skills .text2{
+text-align:center;
+font-size:1em;
+color:crimson;
+
+}
+.skills .card p {
+
+   font-size:1em;
+ margin-bottom: 2%;
+}
+.skills a{
+  background-color:crimson;
+  color:white;
+  padding:1.5%;
+  border-radius:6%;
+  border-style:none;
+  cursor:pointer;
+
+
+}
+
+ .skills .text2{
+    display:flex;
+    width: 190px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size:1em;
+     margin-left:35%;
+     padding:2% 0 ;
+      padding-top:0;
+
+
+}
+
+ .skills .text2:before,
+ .skills .text2:after {
+    content: '';
+    border-top: 2px solid #111;
+    margin: 0 20px 0 0;
+    flex: 1 0 20px;
+}
+
+ .skills .text2:after {
+    margin: 0 0 0 20px;
+
+}
+.skills  a:hover
+{
+background: none;
+ color:crimson; 
+ border:1px solid crimson;
+ transition: all 0.3 ease;
+
+}
+
+.skills .bars{
+  margin-bottom:5vh;
+}
+.skills .skill{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+}
+.skills .line{
+  width:100%;
+  height:5px;
+  background:lightgrey;
+  position:relative;
+}
+.skills .line::before{
+  content:"";
+  position:absolute;
+  left:0;
+  top:0;
+  width:80%;
+  height:100%;
+  background: crimson;
+}
+.skills  .html::before{
+  width:95%;
+} 
+.skills  .css::before{
+  width:85%;
+} 
+.skills  .js::before{
+  width:75%;
+} 
+.skills  .php::before{
+  width:65%;
+} 
+.skills  .sql::before{
+  width:75%;
+} 
+.contact{
+
+  padding:1% 0;
+}
+.skills .left{
+  padding-right: 2%;
+ 
+}
+.skills .card p {
+
+   font-size:1em;
+ margin: 5% 0;
+}
+
+.contact .container{
+  margin-top:0;
+    padding-top:0;
+}
+.contact a{
+  background-color:crimson;
+  color:white;
+  padding:1.5%;
+  border-radius:6%;
+  border-style:none;
+  cursor:pointer;
+
+
+}
+
+.contact  a:hover
+{
+background: none;
+ color:crimson; 
+ border:1px solid crimson;
+ transition: all 0.3 ease;
+
+}
+
+ .contact .text2{
+    display:flex;
+    width: 190px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size:1em;
+     margin-left:35%;
+     padding:2% 0 ;
+     padding-top:0;
+
+
+}
+
+ .contact .text2:before,
+ .contact .text2:after {
+    content: '';
+    border-top: 2px solid #111;
+    margin: 0 1px 0 0;
+    flex: 1 0 20px;
+}
+
+ .contact .text2:after {
+    margin: 0 0 0 1px;
+
+}
+
+ 
+.contact .name input[type="text"]{
+  width:100%;
+   padding:2% ;
+
+   margin-bottom: 1%;
+    font-size: 1em;
+}
+
+.contact  input[type="text"]{
+  width:100%;
+   padding:2% ;
+   margin-top:2%;
+   margin-bottom: 2%;
+     font-size: 1em;
+}
+
+.contact .message textarea{
+  width:100%;
+  padding:2%;
+  margin:2% 0;
+ font-size: 1.2em;
+margin-bottom: 5vh;
+
+}
+.contact  input[type="number"]{
+  width:100%;
+   padding:2% ;
+   margin-top:2%;
+   margin-bottom: 2%;
+     font-size: 1em;
+}
+.contact  input[type="email"]{
+  width:100%;
+   padding:2% ;
+   margin-top:2%;
+   margin-bottom: 2%;
+     font-size: 1em;
+}
+
+.contact title{
+  margin:0%;
+  padding: 0%;
+}
+.contact .text1{
+  text-align: center;
+}
+.contact .text2{
+  text-align: center;
+  color:crimson;
+  font-size:1.2em;
+}
+.contact .p{
+  padding-top: 2vh;
+}
+.contact .detail{
+   position:relative;
+}
+.contact .detail i a{
+  margin:2% 0;
+  
+}
+.contact i{
+  color:crimson;
+  padding:3%;
+ font-size:5vh;
+
+}
+
+.contact .icons .row{
+    display: flex;
+    height: 65px;
+    align-items: center;
+}
+
+
+
+/* responsive contact page*/
+@media screen and (max-width:600px)
+{
+
+.home-text{
+  position:absolute;
+  top:15%;
+  color:white;
+  padding:5%;
+
+}
+} 
+
+@media screen and (max-width:800px)
+{
+
+.home-text{
+  position:absolute;
+  top:32%;
+  color:white;
+  padding:5%;
+
+}
+.home-text a{
+  background-color:crimson;
+  margin-left: 2%;
+  color:white;
+  border-radius:5%;
+  border-style: none;
+  padding:3%;
+  cursor:pointer;
+}
+} 
+/* responsive service page*/
+
+
+@media screen and (max-width: 1100px) {
+  .services .column2 {
+       width: 50%;
+    padding:0%;
+    display: block;
+
+
+
+  
+}
+  .services .column2 .card2{
+  height:40vh;
+ 
+
+  }
+}
+@media screen and (max-width: 800px) {
+  .services .column2 {
+    width: 100%;
+    display: block;
+
+}
+   .services .column2 .card2{
+   height:40vh;
+  }
+}
+@media screen and (max-width: 1500px) {
+  .services .column2 {
+      
+    padding:0%;
+    display: block; 
+}
+  .services .column2 .card2{
+  height:37vh;
+ 
+
+  }
+}
+
+@media screen and (max-width:600px)
+{
+
+.skills .right{
+  padding-top: 3vh;
+}
+.skills .card p {
+
+   font-size:1em;
+ margin-bottom: 5%;
+}
+}
+@media screen and (max-width:900px)
+{
+
+.skills .right{
+  padding-top: 5vh;
+}
+.skills .card p {
+
+   font-size:1em;
+ margin-bottom: 5%;
+}
+}
